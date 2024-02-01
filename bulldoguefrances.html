@@ -29,6 +29,26 @@
             margin: 20px auto;
         }
     </style>
+    <script>
+        function verificarCPF() {
+            var CPF = parseInt(prompt("Digite os últimos 5 números do seu CPF (para eu saber se você é realmente meu pai):"));
+            if (CPF === 77864) {
+                var Resp = parseInt(prompt("Ok melhor pai do mundo, agora é com você. Vai fazer o seu filho o mais feliz do mundo? Digite 1 para sim ou 2 para não:"));
+                if (Resp === 1) {
+                    alert("Você fez a melhor escolha da sua vida e a da do seu filho, te amo muito!");
+                } else if (Resp === 2) {
+                    var Resp2 = parseInt(prompt("Vou te dar mais uma chance. Ok melhor pai do mundo, agora é com você. Vai fazer o seu filho o mais feliz do mundo? Digite 1 para sim ou 2 para não:"));
+                    if (Resp2 === 1) {
+                        alert("Você fez a melhor escolha da sua vida e a da do seu filho, te amo muito!");
+                    } else {
+                        alert("Que pena :(");
+                    }
+                }
+            } else {
+                alert("Você não é meu pai!");
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -46,6 +66,10 @@
         <p>Por favor, Papai, posso ter um Bulldog Francês para chamar de meu? Prometo cuidar dele e amá-lo muito!</p>
         <p>Com amor,</p>
         <p>Seu filho Carlinhos, para Carlos.</p>
+
+        <button onclick="verificarCPF()">Clique aqui para verificar se você é meu pai</button>
     </section>
 </body>
 </html>
+
+   
